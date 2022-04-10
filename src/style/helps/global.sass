@@ -1,0 +1,48 @@
+html
+    font-size: 16px
+    min-height: 100%
+body
+    min-height: 100%
+    color: $color-black
+    background-color: $color-white
+a
+    display: block
+    color: #fff
+
+input,
+button
+    display: block
+
+#app
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+[class*=container]
+    max-width: 1470px
+    margin: 0 auto
+    padding: 0 15px
+
+.main
+    position: relative
+    flex: 1 0 auto
+
+.button-orange
+    width: 365px
+    padding: 25px
+    border-radius: 16px
+    font-size: 24px
+    color: $color-white
+    background-color: $color-orange
+.section
+    &-title
+        font-size: 24px
+        line-height: 1.2
+        color: $color-orange
+        margin-bottom: 20px
+        font-style: italic
+    &-subtitle
+        margin-bottom: 50px
+        font-size: clamp(28px, 4vw, 48px)
+        line-height: 1.2
+        color: $color-dark-orange

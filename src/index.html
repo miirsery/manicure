@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./style/main.css" />
+</head>
+
+<body>
+    <div id="app">
+        @@include('./blocks/header/header.html')
+        <main class="main">
+            @@include('./blocks/hero/hero.html')
+            @@include('./blocks/portfolio/portfolio.html')
+            @@include('./blocks/advantages/advantages.html')
+            @@include('./blocks/price-list/price-list.html')
+            @@include('./blocks/about/about.html')
+            @@include('./blocks/comments/comments.html')
+        </main>
+        @@include('./blocks/footer/footer.html')
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.about
+    &__wrapper
+        position: relative
+        display: flex
+        margin-bottom: 100px
+
+        &::after
+            content: ''
+            position: absolute
+            right: 0
+            top: 0
+            bottom: 0
+            width: 42%
+            height: 100%
+            background-color: #f2ac85
+
+    &__column
+        width: 35%
+        margin-right: 120px
+
+    &__image
+        margin-top: 110px
+        z-index: 2
+        padding-bottom: 40px
+
+    &__text
+        font-size: 24px
+        line-height: 1.2
+        color: $color-black
