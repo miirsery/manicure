@@ -1,7 +1,7 @@
 .comments
-    margin-bottom: 280px
+    min-height: 900px
     &__swiper
-        height: 450px
+        min-height: 450px
     &__body
         display: flex
         align-items: center
@@ -18,13 +18,25 @@
             line-height: 1.2
             color: $color-black
             margin-bottom: 20px
-    &__text
-        font-size: 18px
-        line-height: 1.2
-        color: $color-black
-        margin-bottom: 34px
-    &__button
+    &__content
+        position: relative
+        width: 95%
         margin: 0 auto
+    &__text
+        &-item,
+        &--hidden
+            font-size: 24px
+            line-height: 1.2
+            color: $color-black
+            margin-bottom: 34px
+            &--hidden
+                font-size: 24px
+                line-height: 1.2
+                color: $color-black
+                margin-bottom: 34px
+                display: none
+    &__button
+        margin: 0 auto 20px
         width: 240px
         border-radius: 8px
         font-size: 18px
@@ -33,11 +45,14 @@
         background-color: $color-dark-orange
 
 .swiper
+    width: 90%
     &-slide
         background-color: $color-pink
         border-radius: 32px
-        padding: 20px
-        height: 400px !important
+        padding: 20px 20px 0 20px
+        margin-bottom: 44px
+        min-height: 400px !important
+
     &-pagination
         &-bullet
             margin-right: 20px !important
@@ -46,5 +61,10 @@
             background-color: #c4c4c4 !important
             &-active
                 background-color: $color-black !important
+
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal
     bottom: 0 !important
+.swiper-button-prev:after, .swiper-button-next:after
+    color: $color-black
+.comments__text-item--active
+    display: block
