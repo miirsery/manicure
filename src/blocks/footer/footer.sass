@@ -3,6 +3,7 @@
     background-color: $color-black
     padding: 50px 0 43px
     color: $color-white
+    margin-top: 20px
     &__wrapper
         display: flex
         justify-content: space-between
@@ -15,30 +16,43 @@
         align-items: center
         &-item
             margin-right: clamp(10px, 4vw, 53px)
+
     &__item
         font-size: 24px
         line-height: 1.2
+        &-color,
+        &-link
+            font-size: 24px
+            line-height: 1.2
+            color: $color-orange
+
     &__column
         display: flex
         flex-direction: column
         justify-content: space-between
-        margin-right: clamp(24px, 4vw, 102px)
-
-        &-center
-            text-align: center
 
         &-info
-            display: flex
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-rows: 1fr 1fr 1fr
+            grid-template-areas: "item-1 item-2 item-9" "item-3 item-4 item-5" "item-6 item-7 item-8"
+            column-gap: 80px
+            row-gap: 50px
 
-        &:last-child
-            display: flex
-            flex-direction: column
-            justify-content: space-between
-    &__info
-        &-item,
-        &-item-link
-            font-size: 24px
-            line-height: 1.2
-            color: $color-orange
-            text-align: right
-            height: 28.8px
+        &-item
+            &-item-1
+                grid-area: item-1
+            &-item-2
+                grid-area: item-2
+            &-item-3
+                grid-area: item-3
+            &-item-4
+                grid-area: item-4
+            &-item-5
+                grid-area: item-5
+            &-item-6
+                grid-area: item-6
+            &-item-7
+                grid-area: item-7
+            &-item-8
+                grid-area: item-8

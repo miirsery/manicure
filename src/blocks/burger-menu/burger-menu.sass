@@ -1,0 +1,19 @@
+.burger-menu
+    width: 40vw
+    position: fixed
+    top: 0
+    padding-top: 8rem
+    height: 110vh
+    padding: 30px
+    margin-top: 10px
+    background-color: #fff
+    transform: translateX(260%)
+    transition: transform 0.3s ease
+    &__link
+        color: $color-orange
+        font-size: 44px
+        line-height: 1.2
+        margin-bottom: 3rem
+    &.active
+        transform: translatex(150%)
+        z-index: 3
