@@ -66,14 +66,16 @@
 .header__burger--acitve
   transition: all 0.8s ease-in
   margin-bottom: 100px
+  height: 45px
 
   span
     opacity: 0
   &::after
     height: 2px
-    animation: 1.5s toggleBurgerAnimation forwards
+    transform: rotate(45deg) translate(-14px,-14px)
+
   &::before
-    animation: 1.5s toggleBurgerAnimationBefore forwards
+    transform: rotate(-45deg) translate(-17px, 17px)
     height: 2px
 
 @keyframes toggleBurgerAnimation

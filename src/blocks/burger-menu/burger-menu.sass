@@ -10,10 +10,13 @@
     transform: translateX(260%)
     transition: transform 0.3s ease
     &__link
-        color: $color-orange
         font-size: 44px
         line-height: 1.2
         margin-bottom: 3rem
+        color: $color-black
+        &.active
+            color: $color-orange
+
     &.active
         transform: translatex(150%)
         z-index: 3
