@@ -44,6 +44,7 @@
   "dependencies": {
     "axios": "^0.24.0",
     "choices.js": "^7.0.0",
+    "external-svg-loader": "^1.4.0",
     "js-datepicker": "^5.18.0",
     "micromodal": "^0.4.6",
     "smooth-scroll": "^16.1.3",

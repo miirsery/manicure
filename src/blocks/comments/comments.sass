@@ -1,5 +1,6 @@
 .comments
     min-height: 900px
+
     &__swiper
         min-height: 450px
     &__body
@@ -22,6 +23,8 @@
         position: relative
         width: 95%
         margin: 0 auto
+        z-index: 1
+
     &__text
         &-item,
         &--hidden
@@ -46,6 +49,7 @@
 
 .swiper
     width: 90%
+
     &-slide
         background-color: $color-pink
         border-radius: 32px
@@ -64,6 +68,7 @@
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal
     bottom: 0 !important
+
 .swiper-button-prev:after, .swiper-button-next:after
     color: $color-black
 .comments__text-item--active

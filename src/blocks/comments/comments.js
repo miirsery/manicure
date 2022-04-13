@@ -37,9 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         arrow.addEventListener('click', () => {
             hiddenComments.forEach(comment => {
                 comment.classList.remove('comments__text-item--active')
-                // if (!item.classList.contains('active')) {
-                //     item.style.display = 'none'
-                // }
             })
         })
     })

@@ -96,7 +96,7 @@ const scripts = () => {
         .pipe(sync.stream())
 }
 const fonts = () => {
-    return src(['src/fonts/*.woff2', 'src/fonts/*.woff'])
+    return src(['src/fonts/*.woff2', 'src/fonts/*.woff', 'src/fonts/*.ttf'])
         .pipe(dest('dest/fonts/'))
         .pipe(sync.stream())
 }
