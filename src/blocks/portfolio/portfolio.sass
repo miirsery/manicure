@@ -38,6 +38,15 @@
                 font-size: 24px
                 letter-spacing: 0.05em
                 background: $color-gold
+            &--hidden
+                visibility: hidden
+                opacity: 0
+                height: 0
+                transition: all 0.3s ease
+                &.visible
+                    visibility: visible
+                    opacity: 1
+                    height: auto
         &-item-1
             grid-area: 1 / 1 / 2 / 2
         &-item-2
