@@ -14,6 +14,7 @@ export function handleNavigateTo(values) {
         item.addEventListener('click', (e) => {
             e.preventDefault()
             clearItems(values)
+            console.log(item.hash);
             scrollToId(item.hash);
             item.classList.remove('active')
             if (item.classList.contains('active')) {
@@ -31,10 +32,8 @@ function clearItems(values) {
     })
 }
 
-export function scrollToId(id) {
-    console.log(id);
+function scrollToId(id) {
     let target = document.querySelector(id);
-    console.log(target);
 
     if (target !== null) {
         let pos = target.offsetTop - 150;
