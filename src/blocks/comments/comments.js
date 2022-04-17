@@ -26,11 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const handleToggleComment = (item, className) => {
         item.classList.toggle(className)
+
     }
 
     toggleButtons.forEach(button => {
         button.addEventListener('click', () => {
-            hiddenComments.forEach(hiddenComment => handleToggleComment(hiddenComment, 'comments__text-item--active'))
+            hiddenComments.forEach(hiddenComment => {
+                handleToggleComment(hiddenComment, 'comments__text-item--active')
+                hiddenComment.classList.contains('comments__text-item--active')
+                    ? button.innerHTML = 'Скрыть отзыв'
+                    : button.innerHTML = 'Посмотреть отзыв'
+            })
         })
     })
     arrowsComments.forEach(arrow => {

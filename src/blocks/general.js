@@ -14,7 +14,6 @@ export function handleNavigateTo(values) {
         item.addEventListener('click', (e) => {
             e.preventDefault()
             clearItems(values)
-            console.log(item.hash);
             scrollToId(item.hash);
             item.classList.remove('active')
             if (item.classList.contains('active')) {

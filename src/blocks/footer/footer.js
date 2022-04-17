@@ -1,4 +1,4 @@
-import { handleNavigateTo, scrollToId } from '../general'
+import { handleNavigateTo } from '../general'
 window.addEventListener('load', function () {
     const footerItems = this.document.querySelectorAll('.footer__item')
     handleNavigateTo(footerItems)
