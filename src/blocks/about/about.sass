@@ -1,4 +1,6 @@
 .about
+    &__subtitle
+        margin-bottom: 35px
     &__desktop
         position: relative
         display: flex
@@ -30,10 +32,32 @@
 
     &__mobile
         &-image
+            margin-bottom: 20px
+            text-align: center
             img
                 width: 220px
                 height: 280px
                 border-radius: 16px
+        &-text
+            font-size: 18px
+            line-height: 1.2
+            color: $color-black
+            margin-bottom: 25px
+            &--hidden
+                visibility: hidden
+                opacity: 0
+                height: 0
+                transition: all 0.1s ease-in-out
+                &.active
+                    visibility: visible
+                    opacity: 1
+                    height: auto
+    &__showmore
+        font-size: 24px
+        line-height: 1.2
+        text-decoration-line: underline
+        color: $color-dark-orange
+        margin-bottom: 60px
 
 @media (max-width: 375px)
     .about
