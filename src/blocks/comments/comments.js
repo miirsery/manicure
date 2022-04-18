@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         spaceBetween: 30,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-comments-button-next",
+            prevEl: ".swiper-comments-button-prev",
         },
         pagination: {
-            el: ".swiper-pagination",
-        },
+            el: '.swiper-comments-pagination'
+        }
     })
 
     const toggleButtons = document.querySelectorAll('.comments__button')
