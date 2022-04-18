@@ -8,6 +8,7 @@
         grid-template-rows: 1fr 1fr
         gap: 20px
         margin-bottom: 30px
+        position: relative
         &-item
             max-width: 345px
             min-height: 370px
@@ -66,5 +67,49 @@
         &-item-7
             grid-area: 2 / 4 / 3 / 5
 
+        &-mobile
+            display: none
+        .swiper-pagination-bullet
+            width: 12px
+            height: 12px
+            background-color: #666
+            opacity: 1
+            &-active
+                background-color: $color-light-gray
+        .swiper-button-next,
+        .swiper-button-prev
+            color: $color-black
+            &::after
+                font-size: 30px
+
     &__button
         margin: 0 auto
+        &-mobile
+            display: none
+            font-weight: 500
+            font-size: 18px
+            line-height: 1.2
+            text-align: center
+            text-decoration-line: underline
+            color: #b14c33
+    &__swiper
+        width: 70%
+        &-slide
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                border-radius: 16px
+
+@media (max-width: 375px)
+    .portfolio
+        margin-bottom: 0
+        &__content
+            &-desktop
+                display: none
+            &-mobile
+                display: block
+        &__button
+            display: none
+            &-mobile
+                display: block

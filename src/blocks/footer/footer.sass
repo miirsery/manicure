@@ -4,7 +4,7 @@
     padding: 50px 0 43px
     color: $color-white
     margin-top: 20px
-    &__wrapper
+    &__desktop
         display: flex
         justify-content: space-between
 
@@ -73,3 +73,30 @@
                 grid-area: item-7
             &-item-8
                 grid-area: item-8
+    &__mobile
+        display: none
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        &-logo
+            path
+                stroke: $color-dark-orange
+                fill: $color-dark-orange
+        &-socials
+            display: flex
+        &-link-icon
+            path
+                stroke: $color-dark-orange
+        &-city,
+        &-phone
+            color: $color-dark-orange
+
+@media (max-width: 375px)
+    .footer
+        background-color: $color-pink
+
+        &__desktop
+            display: none
+        &__mobile
+            display: flex

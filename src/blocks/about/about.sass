@@ -1,5 +1,5 @@
 .about
-    &__wrapper
+    &__desktop
         position: relative
         display: flex
         margin-bottom: 100px
@@ -27,3 +27,19 @@
         font-size: 24px
         line-height: 1.2
         color: $color-black
+
+    &__mobile
+        &-image
+            img
+                width: 220px
+                height: 280px
+                border-radius: 16px
+
+@media (max-width: 375px)
+    .about
+        &__desktop
+            display: none
+        &__mobile
+            display: flex
+            flex-direction: column
+            justify-content: center

@@ -5,13 +5,14 @@
         align-items: center
         justify-content: space-between
         margin-top: 9rem
+        position: relative
     &__info
         max-width: 730px
     &__title
         font-family: 'lora', serif
         margin-bottom: 1.4rem
         font-weight: 600
-        font-size: clamp(48px, 4vw, 64px)
+        font-size: clamp(44px, 4vw, 64px)
         letter-spacing: 0.06em
         color: $color-black
     &__subtitle
@@ -24,3 +25,28 @@
 
     &__image
         max-width: 50vw
+
+@media (max-width: 375px)
+    .hero
+        height: auto
+        padding-bottom: 30px
+
+        &__image
+            max-width: 100%
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 0
+            top: -45px
+            object-fit: cover
+            z-index: -1
+            opacity: .3
+        &__subtitle
+            color: #7a7a7a
+            margin-bottom: 20px
+        &__button
+            width: 100%
+            height: 56px
+            border-radius: 17px
+            padding: 13px 0
+            margin: 0 auto
