@@ -20,6 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    new Swiper('.comments__mobile-swiper', {
+        slidesPerView: 1,
+        modules: [Autoplay, Navigation],
+        speed: 500,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    })
+
     const toggleButtons = document.querySelectorAll('.comments__button')
     const hiddenComments = document.querySelectorAll('.comments__text-item--hidden')
     const arrowsComments = document.querySelectorAll('.swiper-arrow')
